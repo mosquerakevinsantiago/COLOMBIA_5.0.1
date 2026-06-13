@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marketing de videojuegos 5.0</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/segunda.pagina.css">
+</head>
+<body>
+
+<!-- TOP BAR -->
+<header class="top-bar">
+  <div style="display:flex;align-items:center;gap:12px;">
+    <button class="burger" id="burger" aria-label="Menú">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="brand">
+      <div class="brand-dot"></div>
+      <span class="brand-txt"><em>Colombia 5.0</em> · Marketing</span>
+    </div>
+  </div>
+  <div style="display:flex;align-items:center;gap:14px;">
+    <a href="index.html" class="back-link" data-es="← Temas" data-en="← Topics"> ver primera página</a>
+    <div class="lang-toggle">
+      <button id="btn-es" class="active" onclick="setLang('es')">ES</button>
+      <button id="btn-en" onclick="setLang('en')">EN</button>
+    </div>
+  </div>
+</header>
+
+<div class="layout">
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-header" data-es="Marketing · 9 momentos" data-en="Marketing · 9 moments">Marketing · 9 momentos</div>
+    <ul class="nav-list">
+      <li class="nav-item"><div class="nav-link active" onclick="goTo(0)" data-idx="0"><span class="nav-num">01</span><span class="nav-label" data-es="Escenario Principal" data-en="Main Stage">Escenario Principal</span></div></li>
+      <li class="nav-item"><div class="nav-link" onclick="goTo(1)" data-idx="1"><span class="nav-num">02</span><span class="nav-label" data-es="Rutina Operativa" data-en="Operational Routine">Rutina Operativa</span></div></li>
+      <li class="nav-item"><div class="nav-link" onclick="goTo(2)" data-idx="2"><span class="nav-num">03</span><span class="nav-label" data-es="Redes Sociales" data-en="Social Media">Redes Sociales</span></div></li>
+      <li class="nav-item"><div class="nav-link" onclick="goTo(3)" data-idx="3"><span class="nav-num">04</span><span class="nav-label">Influencers</span></div></li>
+      <li class="nav-item"><div class="nav-link" onclick="goTo(4)" data-idx="4"><span class="nav-num">05</span><span class="nav-label" data-es="Prensa & Presskit" data-en="Press & Presskit">Prensa & Presskit</span></div></li>
+      <li class="nav-item"><div class="nav-link" onclick="goTo(5)" data-idx="5"><span class="nav-num">06</span><span class="nav-label" data-es="Publicidad Paga" data-en="Paid Advertising">Publicidad Paga</span></div></li>
+      <li class="nav-item"><div class="nav-link" onclick="goTo(6)" data-idx="6"><span class="nav-num">07</span><span class="nav-label">Google Ads</span></div></li>
+      <li class="nav-item"><div class="nav-link" onclick="goTo(8)" data-idx="8"><span class="nav-num">08</span><span class="nav-label" data-es="Cierre" data-en="Closing">Cierre</span></div></li>
+    </ul>
+  </aside>
+
+  <div class="sidebar-overlay" id="overlay" onclick="closeSidebar()"></div>
+
+  <!-- CONTENT -->
+  <div class="content">
+
+    <!-- ── 01 Escenario Principal ── -->
+    <div class="slide active" id="slide-0">
+      <div class="slide-card">
+        <div class="img-slot" id="slot-0">
+          <span class="slide-badge">01</span>
+        <img src="img/Escenario Principal.jpeg"alt="Escenario Principal" onerror="imgErr(this)" style="width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s ease;">
+          </a>
+          <div class="img-placeholder" id="ph-0" style="display:none">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="3"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+            <span data-es="Imagen no disponible" data-en="Image unavailable">Imagen no disponible</span>
+          </div>
+        </div>
+        <div class="slide-body">
+          <span class="slide-tag" data-es="Evento · Colombia 5.0" data-en="Event · Colombia 5.0">Evento · Colombia 5.0</span>
+          <h2 data-es="Col 5.0 · Escenario Principal" data-en="Col 5.0 · Main Stage">Col 5.0 · Escenario Principal</h2>
+          <p data-es="Escenario principal de Colombia 5.0 organizado por el Ministerio TIC y Trice." data-en="Main stage of Colombia 5.0 organized by the Ministry of ICT and Trice.">Escenario principal de Colombia 5.0 organizado por el Ministerio TIC y Trice.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── 02 Rutina Operativa ── -->
+    <div class="slide" id="slide-1">
+      <div class="slide-card">
+        <div class="img-slot" id="slot-1">
+          <span class="slide-badge">02</span>
+          <img src="img/ruta.jpeg" alt="Rutina Operativa" onerror="imgErr(this)" style="width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s ease;">
+          </a>
+          <div class="img-placeholder" id="ph-1" style="display:none">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="3"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+            <span data-es="Imagen no disponible" data-en="Image unavailable">Imagen no disponible</span>
+          </div>
+        </div>
+        <div class="slide-body">
+          <span class="slide-tag" data-es="Estrategia · Marketing" data-en="Strategy · Marketing">Estrategia · Marketing</span>
+          <h2 data-es="Rutina Operativa" data-en="Operational Routine">Rutina Operativa</h2>
+          <p data-es="Organización, Bloqueo de Agenda y Bajar a Ejecución." data-en="Organization, Agenda Blocking and Move to Execution.">Organización, Bloqueo de Agenda y Bajar a Ejecución.</p>
+          <p data-es="El marketing NO es opcional, es parte del desarrollo." data-en="Marketing is NOT optional, it is part of development.">El marketing NO es opcional, es parte del desarrollo.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── 03 Redes Sociales ── -->
+    <div class="slide" id="slide-2">
+      <div class="slide-card">
+        <div class="img-slot" id="slot-2">
+          <span class="slide-badge">03</span>
+          <img src="img/redes.jpeg" alt="Redes Sociales" onerror="imgErr(this)" style="width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s ease;">
+          <div class="img-placeholder" id="ph-2" style="display:none">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="3"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+            <span data-es="Imagen no disponible" data-en="Image unavailable">Imagen no disponible</span>
+          </div>
+        </div>
+        <div class="slide-body">
+          <span class="slide-tag" data-es="Redes Sociales · Reddit" data-en="Social Media · Reddit">Redes Sociales · Reddit</span>
+          <h2 data-es="8. Redes Sociales &amp; Reddit" data-en="8. Social Media &amp; Reddit">8. Redes Sociales &amp; Reddit</h2>
+          <p>TikTok, IG Reels, YT Shorts, Twitter/Bsky.</p>
+          <p data-es="Reddit orgánico y Reddit Ads para Steam Wishlists." data-en="Organic Reddit and Reddit Ads for Steam Wishlists.">Reddit orgánico y Reddit Ads para Steam Wishlists.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── 04 Influencers ── -->
+    <div class="slide" id="slide-3">
+      <div class="slide-card">
+        <div class="img-slot" id="slot-3">
+          <span class="slide-badge">04</span>
+          <img src="img/influences.jpeg" alt="Influencers" onerror="imgErr(this)" style="width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s ease;">
+          <div class="img-placeholder" id="ph-3" style="display:none">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="3"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+            <span data-es="Imagen no disponible" data-en="Image unavailable">Imagen no disponible</span>
+          </div>
+        </div>
+        <div class="slide-body">
+          <span class="slide-tag" data-es="Alcance · Comunidad" data-en="Reach · Community">Alcance · Comunidad</span>
+          <h2>7. Influencers</h2>
+          <p data-es="Contacto humano por Mail o Discord, acceso anticipado como incentivo." data-en="Human contact via Mail or Discord, early access as incentive.">Contacto humano por Mail o Discord, acceso anticipado como incentivo.</p>
+          <p data-es="Y micro-influencers de nicho." data-en="And niche micro-influencers.">Y micro-influencers de nicho.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── 05 Prensa ── -->
+    <div class="slide" id="slide-4">
+      <div class="slide-card">
+        <div class="img-slot" id="slot-4">
+          <span class="slide-badge">05</span>
+          <img src="img/prensa.jpeg" alt="Prensa" onerror="imgErr(this)" style="width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s ease;">
+          <div class="img-placeholder" id="ph-4" style="display:none">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="3"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+            <span data-es="Imagen no disponible" data-en="Image unavailable">Imagen no disponible</span>
+          </div>
+        </div>
+        <div class="slide-body">
+          <span class="slide-tag" data-es="Prensa · Presskit" data-en="Press · Presskit">Prensa · Presskit</span>
+          <h2 data-es="6. Prensa, Presskit &amp; Press Release" data-en="6. Press, Presskit &amp; Press Release">6. Prensa, Presskit &amp; Press Release</h2>
+          <p data-es="Genera confianza y legitimidad." data-en="Build trust and legitimacy.">Genera confianza y legitimidad.</p>
+          <p data-es="Presskit con Key Art, Screenshots y Trailer para IGN, GameRant y PCGamer." data-en="Presskit with Key Art, Screenshots and Trailer for IGN, GameRant and PCGamer.">Presskit con Key Art, Screenshots y Trailer para IGN, GameRant y PCGamer.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── 06 Publicidad Paga ── -->
+    <div class="slide" id="slide-5">
+      <div class="slide-card">
+        <div class="img-slot" id="slot-5">
+          <span class="slide-badge">06</span>
+          <img src="img/pagos.jpeg" alt="Publicidad Paga" onerror="imgErr(this)" style="width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s ease;">
+          <div class="img-placeholder" id="ph-5" style="display:none">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="3"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+            <span data-es="Imagen no disponible" data-en="Image unavailable">Imagen no disponible</span>
+          </div>
+        </div>
+        <div class="slide-body">
+          <span class="slide-tag" data-es="Publicidad · Ads" data-en="Advertising · Ads">Publicidad · Ads</span>
+          <h2 data-es="9. Publicidad Paga · Ads" data-en="9. Paid Advertising · Ads">9. Publicidad Paga · Ads</h2>
+          <p data-es="Impulsa tráfico de calidad a Steam para convertir en Wishlists." data-en="Drive quality traffic to Steam to convert into Wishlists.">Impulsa tráfico de calidad a Steam para convertir en Wishlists.</p>
+          <p data-es="Segmentación para maximizar el ROI." data-en="Segmentation to maximize ROI.">Segmentación para maximizar el ROI.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── 07 Google Ads ── -->
+    <div class="slide" id="slide-6">
+      <div class="slide-card">
+        <div class="img-slot" id="slot-6">
+          cl <span class="slide-badge">07</span>
+        <img src="img/ads.jpeg" alt="Google Ads" onerror="imgErr(this)" style="width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s ease;">
+          <div class="img-placeholder" id="ph-6" style="display:none">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="3"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+            <span data-es="Imagen no disponible" data-en="Image unavailable">Imagen no disponible</span>
+          </div>
+        </div>
+        <div class="slide-body">
+          <span class="slide-tag" data-es="Datos · Google Ads" data-en="Data · Google Ads">Datos · Google Ads</span>
+          <h2 data-es="Google Ads · Dashboard Real" data-en="Google Ads · Real Dashboard">Google Ads · Dashboard Real</h2>
+          <p data-es="816 clics, 489K impresiones, CPC $1.50, costo $1.22K." data-en="816 clicks, 489K impressions, CPC $1.50, cost $1.22K.">816 clics, 489K impresiones, CPC $1.50, costo $1.22K.</p>
+          <p data-es="Campañas reales mostradas en la charla." data-en="Real campaigns shown during the talk.">Campañas reales mostradas en la charla.</p>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- ── 09 Cierre de Charla ── -->
+    <div class="slide" id="slide-8">
+      <div class="slide-card">
+        <div class="img-slot" id="slot-8">
+          <span class="slide-badge">09</span>
+         <img src="img/gracias.jpeg" alt="Cierre de Charla" onerror="imgErr(this)" style="width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s ease;">
+          <div class="img-placeholder" id="ph-8" style="display:none">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="3"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+            <span data-es="Imagen no disponible" data-en="Image unavailable">Imagen no disponible</span>
+          </div>
+        </div>
+        <div class="slide-body">
+          <span class="slide-tag" data-es="Cierre · Colombia 5.0" data-en="Closing · Colombia 5.0">Cierre · Colombia 5.0</span>
+          <h2 data-es="¡Gracias! · Cierre de Charla" data-en="Thank You! · Talk Closing">¡Gracias! · Cierre de Charla</h2>
+          <p data-es="Cierre de la charla de marketing para videojuegos indie." data-en="Closing of the indie video game marketing talk.">Cierre de la charla de marketing para videojuegos indie.</p>
+          <p data-es="Loop Marketing en Colombia 5.0." data-en="Loop Marketing at Colombia 5.0.">Loop Marketing en Colombia 5.0.</p>
+        </div>
+      </div>
+    </div>
+
+
+
+
+ 
+  
+    <div class="bottom-bar">
+      <button class="arr-btn" id="btn-prev" onclick="goTo(current-1)" disabled>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+      </button>
+      <div class="progress-track">
+        <div class="progress-fill" id="progress-fill" style="width:11.11%"></div>
+      </div>
+      <span class="counter" id="counter">1 / 9</span>
+      <button class="arr-btn" id="btn-next" onclick="goTo(current+1)">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+      </button>
+    </div>
+
+  </div><!-- /content -->
+</div><!-- /layout -->
+
+<script src="js/segunda.js"></script>
+</body>
+</html>

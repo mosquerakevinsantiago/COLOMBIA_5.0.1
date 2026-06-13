@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>COLOMBIA 5.0 </title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/segunda.pagina.css">
+</head>
+<body>
+
+<!-- TOP BAR -->
+<header class="top-bar">
+  <div style="display:flex;align-items:center;gap:12px;">
+    <button class="burger" id="burger" aria-label="Menú">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="brand">
+      <div class="brand-dot"></div>
+      <span class="brand-txt"><em>Colombia 5.0</em>
+      </span>
+    </div>
+  </div>
+  <div style="display:flex;align-items:center;gap:14px;">
+    <a href="segunda.html" class="back-link" data-es="Marketing →" data-en="Marketing →"> ver Marketing de videojuegos →</a>
+    <div class="lang-toggle">
+      <button id="btn-es" class="active" onclick="setLang('es')">ES</button>
+      <button id="btn-en" onclick="setLang('en')">EN</button>
+    </div>
+  </div>
+</header>
+
+<div class="layout">
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-header" data-es="Temas · 10 herramientas" data-en="Topics · 10 tools">Temas · 10 herramientas</div>
+    <ul class="nav-list">
+      <li class="nav-item"><div class="nav-link active" onclick="goTo(0)" data-idx="0"><span class="nav-num">01</span><span class="nav-label">Scratch</span></div></li>
+      <li class="nav-item"><div class="nav-link" onclick="goTo(1)" data-idx="1"><span class="nav-num">02</span><span class="nav-label">Blockly</span></div></li>
+      <li class="nav-item"><div class="nav-link" onclick="goTo(2)" data-idx="2"><span class="nav-num">03</span><span class="nav-label">Arduino</span></div></li>
+      <li class="nav-item"><div class="nav-link" onclick="goTo(3)" data-idx="3"><span class="nav-num">04</span><span class="nav-label">S4A</span></div></li>
+      <li class="nav-item"><div class="nav-link" onclick="goTo(4)" data-idx="4"><span class="nav-num">05</span><span class="nav-label">Squeak</span></div></li>
+      <li class="nav-item"><div class="nav-link" onclick="goTo(5)" data-idx="5"><span class="nav-num">06</span><span class="nav-label" data-es="Software Libre" data-en="Free Software">Software Libre</span></div></li>
+      <li class="nav-item"><div class="nav-link" onclick="goTo(6)" data-idx="6"><span class="nav-num">07</span><span class="nav-label" data-es="Pens. Computacional" data-en="Comp. Thinking">Pens. Computacional</span></div></li>
+      <li class="nav-item"><div class="nav-link" onclick="goTo(7)" data-idx="7"><span class="nav-num">08</span><span class="nav-label" data-es="Construccionismo" data-en="Constructionism">Construccionismo</span></div></li>
+      <li class="nav-item"><div class="nav-link" onclick="goTo(8)" data-idx="8"><span class="nav-num">09</span><span class="nav-label">FLISOL</span></div></li>
+      <li class="nav-item"><div class="nav-link" onclick="goTo(9)" data-idx="9"><span class="nav-num">10</span><span class="nav-label" data-es="Inteligencia Artificial" data-en="Artificial Intelligence">Inteligencia Artificial</span></div></li>
+    </ul>
+  </aside>
+
+  <div class="sidebar-overlay" id="overlay" onclick="closeSidebar()"></div>
+
+  <!-- CONTENT -->
+  <div class="content">
+
+    <!-- ── 01 Scratch ── -->
+    <div class="slide active" id="slide-0">
+      <div class="slide-card">
+        <div class="img-slot" id="slot-0">
+          <span class="slide-badge">01</span>
+          <div class="img-placeholder">
+          </div>
+   <img src="img/scratch.jpeg" alt="Scratch" onerror="imgErr(this)" style="width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s ease;">
+        </div>
+        <div class="slide-body">
+          <span class="slide-tag" data-es="Programación Visual" data-en="Visual Programming">Programación Visual</span>
+          <h2>Scratch</h2>
+          <p data-es="Scratch es un lenguaje de programación visual desarrollado por el grupo Lifelong Kindergarten del MIT Media Lab." data-en="Scratch is a visual programming language developed by the Lifelong Kindergarten group at MIT Media Lab.">Scratch es un lenguaje de programación visual desarrollado por el grupo Lifelong Kindergarten del MIT Media Lab.</p>
+          <p data-es="Permite crear animaciones, videojuegos, historias interactivas y simulaciones mediante bloques de programación fáciles de usar." data-en="It allows creating animations, video games, interactive stories and simulations using easy drag-and-drop programming blocks.">Permite crear animaciones, videojuegos, historias interactivas y simulaciones mediante bloques de programación fáciles de usar.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── 02 Blockly ── -->
+    <div class="slide" id="slide-1">
+      <div class="slide-card">
+        <div class="img-slot" id="slot-1">
+          <span class="slide-badge">02</span>
+          <div class="img-placeholder">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="3"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+        
+          </div>
+ 
+      <img src="img/blocly.jpeg" alt="Blockly" onerror="imgErr(this)" style="width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s ease;">
+        </div>
+        <div class="slide-body">
+          <span class="slide-tag" data-es="Programación Visual · Google" data-en="Visual Programming · Google">Programación Visual · Google</span>
+          <h2>Blockly</h2>
+          <p data-es="Blockly es una biblioteca de programación visual desarrollada por Google." data-en="Blockly is a visual programming library developed by Google.">Blockly es una biblioteca de programación visual desarrollada por Google.</p>
+          <p data-es="Los bloques pueden convertirse automáticamente en código JavaScript, Python, PHP, Lua y otros lenguajes." data-en="Blocks can be automatically converted into JavaScript, Python, PHP, Lua, and other programming languages.">Los bloques pueden convertirse automáticamente en código JavaScript, Python, PHP, Lua y otros lenguajes.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── 03 Arduino ── -->
+    <div class="slide" id="slide-2">
+      <div class="slide-card">
+        <div class="img-slot" id="slot-2">
+          <span class="slide-badge">03</span>
+          <div class="img-placeholder">
+            
+          </div>
+         
+         <img src="img/arduino.jpeg" alt="Arduino" onerror="imgErr(this)" style="width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s ease;">
+    
+        </div>
+        <div class="slide-body">
+          <span class="slide-tag" data-es="Hardware Libre · STEM" data-en="Open Hardware · STEM">Hardware Libre · STEM</span>
+          <h2>Arduino</h2>
+          <p data-es="Arduino es una plataforma de hardware libre diseñada para facilitar la creación de proyectos electrónicos." data-en="Arduino is an open-source hardware platform designed to simplify the creation of electronic projects.">Arduino es una plataforma de hardware libre diseñada para facilitar la creación de proyectos electrónicos.</p>
+          <p data-es="Se utiliza ampliamente en robótica, automatización, domótica y proyectos educativos STEM." data-en="It is widely used in robotics, automation, home automation, and STEM educational projects.">Se utiliza ampliamente en robótica, automatización, domótica y proyectos educativos STEM.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── 04 S4A ── -->
+    <div class="slide" id="slide-3">
+      <div class="slide-card">
+        <div class="img-slot" id="slot-3">
+          <span class="slide-badge">04</span>
+          <div class="img-placeholder">
+           
+          </div>
+ <img src="img/mblock.jpeg" alt="S4A" onerror="imgErr(this)" style="width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s ease;">
+        </div>
+        <div class="slide-body">
+          <span class="slide-tag">Scratch + Arduino</span>
+          <h2>S4A <small style="font-size:.6em;opacity:.45">(Scratch for Arduino)</small></h2>
+          <p data-es="S4A adapta Scratch para controlar placas Arduino mediante programación en bloques." data-en="S4A adapts Scratch to control Arduino boards using block-based programming.">S4A adapta Scratch para controlar placas Arduino mediante programación en bloques.</p>
+          <p data-es="Permite manejar sensores, LEDs, motores y otros dispositivos electrónicos sin escribir código complejo." data-en="It lets you control sensors, LEDs, motors and other electronic devices without writing complex code.">Permite manejar sensores, LEDs, motores y otros dispositivos electrónicos sin escribir código complejo.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── 05 Squeak ── -->
+    <div class="slide" id="slide-4">
+      <div class="slide-card">
+        <div class="img-slot" id="slot-4">
+          <span class="slide-badge">05</span>
+          <div class="img-placeholder">
+    
+          </div>
+    
+        <img src="img/squeak.jpeg" alt="Squeak" onerror="imgErr(this)" style="width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s ease;">
+        </div>
+        <div class="slide-body">
+          <span class="slide-tag" data-es="Entorno Smalltalk" data-en="Smalltalk Environment">Entorno Smalltalk</span>
+          <h2>Squeak</h2>
+          <p data-es="Squeak es un entorno de programación basado en Smalltalk utilizado en las primeras versiones de Scratch." data-en="Squeak is a Smalltalk-based programming environment used in the early versions of Scratch.">Squeak es un entorno de programación basado en Smalltalk utilizado en las primeras versiones de Scratch.</p>
+          <p data-es="Destaca por ser abierto, educativo y altamente interactivo para el aprendizaje de la programación." data-en="It stands out for being open, educational and highly interactive for learning programming.">Destaca por ser abierto, educativo y altamente interactivo para el aprendizaje de la programación.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── 06 Software Libre ── -->
+    <div class="slide" id="slide-5">
+      <div class="slide-card">
+        <div class="img-slot" id="slot-5">
+          <span class="slide-badge">06</span>
+          <div class="img-placeholder">
+        
+          </div>
+        
+    <img src="img/software libre.jpeg" alt="Software Libre" onerror="imgErr(this)" style="width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s ease;">
+        </div>
+        <div class="slide-body">
+          <span class="slide-tag" data-es="Libertad Digital" data-en="Digital Freedom">Libertad Digital</span>
+          <h2 data-es="Software Libre" data-en="Free Software">Software Libre</h2>
+          <p data-es="El software libre garantiza la libertad de usar, estudiar, modificar y compartir programas." data-en="Free software guarantees the freedom to use, study, modify and share programs.">El software libre garantiza la libertad de usar, estudiar, modificar y compartir programas.</p>
+          <p data-es="Favorece la colaboración, la transparencia y la independencia tecnológica de las comunidades." data-en="It promotes collaboration, transparency and technological independence within communities.">Favorece la colaboración, la transparencia y la independencia tecnológica de las comunidades.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── 07 Pensamiento Computacional ── -->
+    <div class="slide" id="slide-6">
+      <div class="slide-card">
+        <div class="img-slot" id="slot-6">
+          <span class="slide-badge">07</span>
+          <div class="img-placeholder">
+            
+          </div>
+         
+   <img src="img/pensamiento.jpeg" alt="Pensamiento Computacional" onerror="imgErr(this)" style="width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s ease;">
+        </div>
+        <div class="slide-body">
+          <span class="slide-tag" data-es="Habilidades Siglo XXI" data-en="21st Century Skills">Habilidades Siglo XXI</span>
+          <h2 data-es="Pensamiento Computacional" data-en="Computational Thinking">Pensamiento Computacional</h2>
+          <p data-es="Es la capacidad de resolver problemas utilizando estrategias propias de la informática." data-en="It is the ability to solve problems using strategies inherent to computer science.">Es la capacidad de resolver problemas utilizando estrategias propias de la informática.</p>
+          <p data-es="Incluye descomposición de problemas, reconocimiento de patrones, abstracción y diseño de algoritmos." data-en="It includes problem decomposition, pattern recognition, abstraction and algorithm design.">Incluye descomposición de problemas, reconocimiento de patrones, abstracción y diseño de algoritmos.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── 08 Construccionismo ── -->
+    <div class="slide" id="slide-7">
+      <div class="slide-card">
+        <div class="img-slot" id="slot-7">
+          <span class="slide-badge">08</span>
+          <div class="img-placeholder">
+          
+          </div>
+        <a href="https://ibb.co/dw1ZdM0g">
+            <img src="https://i.ibb.co/dw1ZdM0g/transmisor-software-libre.png" alt="transmisor-software-libre" imgErr(this)" style="width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s ease;"><rect fill="%230a1520" width="600" height="338"/>
+          
+        </a>
+          
+        
+        </div>
+        <div class="slide-body">
+          <span class="slide-tag" data-es="Teoría Educativa · Papert" data-en="Educational Theory · Papert">Teoría Educativa · Papert</span>
+          <h2 data-es="Construccionismo" data-en="Constructionism">Construccionismo</h2>
+          <p data-es="Teoría educativa desarrollada por Seymour Papert." data-en="Educational theory developed by Seymour Papert.">Teoría educativa desarrollada por Seymour Papert.</p>
+          <p data-es="Afirma que las personas aprenden mejor cuando construyen objetos significativos que pueden compartir con otros." data-en="It states that people learn best when they build meaningful objects that they can share with others.">Afirma que las personas aprenden mejor cuando construyen objetos significativos que pueden compartir con otros.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── 09 FLISOL ── -->
+    <div class="slide" id="slide-8">
+      <div class="slide-card">
+        <div class="img-slot" id="slot-8">
+          <span class="slide-badge">09</span>
+          <div class="img-placeholder">
+           
+     <img src="img/flisol.jpeg" alt="FLISOL" onerror="imgErr(this)" style="width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s ease;">
+          </div>
+         
+        </div>
+        <div class="slide-body">
+          <span class="slide-tag" data-es="Festival · América Latina" data-en="Festival · Latin America">Festival · América Latina</span>
+          <h2>FLISOL</h2>
+          <p data-es="El Festival Latinoamericano de Instalación de Software Libre es el evento de difusión de software libre más grande de América Latina." data-en="The Latin American Free Software Installation Festival is the largest free software outreach event in Latin America.">El Festival Latinoamericano de Instalación de Software Libre es el evento de difusión de software libre más grande de América Latina.</p>
+          <p data-es="Reúne estudiantes, docentes, desarrolladores y comunidades tecnológicas para compartir conocimiento y promover la cultura libre." data-en="It brings together students, teachers, developers and tech communities to share knowledge and promote free culture.">Reúne estudiantes, docentes, desarrolladores y comunidades tecnológicas para compartir conocimiento y promover la cultura libre.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── 10 Inteligencia Artificial ── -->
+    <div class="slide" id="slide-9">
+      <div class="slide-card">
+        <div class="img-slot" id="slot-9">
+          <span class="slide-badge">10</span>
+          <div class="img-placeholder">
+            
+          </div>
+        
+   <img src="img/inteligencia.jpeg" alt="Inteligencia Artificial" onerror="imgErr(this)" style="width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s ease;">
+        </div>
+        <div class="slide-body">
+          <span class="slide-tag">IA · Colombia 5.0 2026</span>
+          <h2 data-es="Inteligencia Artificial" data-en="Artificial Intelligence">Inteligencia Artificial</h2>
+          <p data-es="La IA fue tema central en Colombia 5.0 2026: desde agentes autónomos hasta IA al servicio del comercio y el marketing, con expertos como Borja Castelar (ex LinkedIn LATAM) y Danny Bravo (Tribu iA)." data-en="AI was a central theme at Colombia 5.0 2026: from autonomous agents to AI-powered commerce and marketing, with experts like Borja Castelar (ex LinkedIn LATAM) and Danny Bravo (Tribu iA).">La IA fue tema central en Colombia 5.0 2026: desde agentes autónomos hasta IA al servicio del comercio y el marketing, con expertos como Borja Castelar (ex LinkedIn LATAM) y Danny Bravo (Tribu iA).</p>
+          <p data-es="Está transformando sectores como la educación, la medicina, el arte y la programación en toda Colombia." data-en="It is transforming sectors such as education, medicine, art and programming throughout Colombia.">Está transformando sectores como la educación, la medicina, el arte y la programación en toda Colombia.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- BOTTOM BAR -->
+    <div class="bottom-bar">
+      <button class="arr-btn" id="btn-prev" onclick="goTo(current-1)" disabled>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+      </button>
+      <div class="progress-track">
+        <div class="progress-fill" id="progress-fill" style="width:10%"></div>
+      </div>
+      <span class="counter" id="counter">1 / 10</span>
+      <button class="arr-btn" id="btn-next" onclick="goTo(current+1)">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+      </button>
+    </div>
+
+  </div><!-- /content -->
+</div><!-- /layout -->
+
+<script src="js/script.js"></script>
+</body>
+</html>
